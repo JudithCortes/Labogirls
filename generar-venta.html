@@ -43,11 +43,9 @@
     <img src="add.PNG" alt="">
 </div>
 </div>
-<h5 style = "margin-top: 25px;
-margin-left: 17px;
-}">Productos que venderas</h5>
-<div>
-    <select class ="custom-select mr-sm-2"  id="selector" placeholder="producto">
+<h5 id="s1">Productos que venderas</h5>
+<div class="s2">
+    <select class ="custom-select mr-sm-2"  style="margin-top: 20"id="selector" placeholder="producto">
                 <option value="Refresco" data-price="12">Refresco</option>
                 <option value="Papitas"data-price="8">Papitas</option>
                 <option value="Huevo" data-price="36">Huevo</option>
@@ -55,18 +53,20 @@ margin-left: 17px;
         </select>
     </div>
     <div>
-        <input type="number" id="cantidad" placeholder = "Ingrese la cantidad " >
+        <input class="s3" type="number" id="cantidad" placeholder = "Ingrese la cantidad " >
     </div>
     <div id="add1">
 
     </div>
-    <div >
-            <h4 id="total"style = "margin-top: 25px;
-            margin-left: 17px;
-            }">Total:</h4>
+    <div class="s4">
+        <h4 class="s5">Total:</h4>
+            <h4 class = "s6" id="total"></h4>
     </div>
-    <button id = "crear">Crear QR</button>
+    <div>
+            <button class = "btn btn-primary btn-lg active" style = "margin-left:117px;margin-top: 55px;" id = "crear">Crear QR</button>
 
+    </div>
+    
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
